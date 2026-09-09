@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="section.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <header>
+<section id="help" class="bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Хотите забрать животное или помочь приюту?</h2>
+    <p class="text-center text-muted mb-5">
+      Заполните форму ниже, и наш сотрудник свяжется с вами в ближайшее время.
+    </p>
+
+    <div class="contact-form">
+      <form action="#" method="post">
+        
+        <div class="mb-3">
+          <label for="name" class="form-label">Ваше имя *</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label">Телефон *</label>
+          <input type="tel" class="form-control" id="phone" name="phone" 
+                 placeholder="+7 (___) ___-__-__" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="email" name="email">
+        </div>
+
+        <div class="mb-3">
+          <label for="purpose" class="form-label">Цель обращения *</label>
+          <select class="form-select" id="purpose" name="purpose" required>
+            <option value="" selected disabled>Выберите вариант...</option>
+            <option value="adopt">Забрать животное из приюта</option>
+            <option value="help-material">Оказать материальную помощь</option>
+            <option value="help-food">Передать корм/вещи</option>
+            <option value="volunteer">Стать волонтёром</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea class="form-control" id="message" name="message" rows="4"
+                    placeholder="Расскажите подробнее о вашем обращении..."></textarea>
+        </div>
+
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="agree" required>
+          <label class="form-check-label" for="agree">
+            Я согласен на обработку персональных данных
+          </label>
+        </div>
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary btn-lg px-5">Отправить</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</section>
+  </header>
+  </body>
+</html>
